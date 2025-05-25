@@ -1,2 +1,9 @@
 ## Phase 0
-- Set up development Environment
+- set up development environment
+- python 3.10+
+- proj dir (pitchscorer/)
+
+- input formats (PDF, PPTX, DOCX)
+- scoring criteria
+
+## Phase 1
