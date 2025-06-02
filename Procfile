@@ -1,0 +1,1 @@
+web: gunicorn exec-summary-analyzer:app
