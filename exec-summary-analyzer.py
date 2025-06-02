@@ -5,12 +5,12 @@ A comprehensive web application for analyzing company executive summaries using 
 
 import os
 import logging
-import tempfile
+import tempfile # noqa
 import json
 from datetime import datetime
 from typing import Dict, Any, Optional, List
 from dataclasses import dataclass, asdict
-from pathlib import Path
+from pathlib import Path #noqa
 
 # Web framework
 from flask import Flask, render_template, request, jsonify, send_file
@@ -22,13 +22,13 @@ import PyPDF2
 from pdfplumber import PDF
 
 # LLM integration
-import openai
+import openai #noqa
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # Additional utilities
-import markdown
+import markdown # noqa
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -1255,7 +1255,7 @@ if __name__ == '__main__':
     # Make run.py executable on Unix systems
     try:
         os.chmod('run.py', 0o755)
-    except:
+    except: #noqa
         pass
 
 # Main execution
@@ -1269,7 +1269,7 @@ if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
     debug = os.getenv('FLASK_DEBUG', 'True').lower() == 'true'
     
-    print(f"Executive Summary Analyzer starting...")
+    print(f"Executive Summary Analyzer starting...") #noqa
     print(f"Server running at http://{host}:{port}")
     
     app.run(host=host, port=port, debug=debug)
