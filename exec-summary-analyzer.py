@@ -105,7 +105,7 @@ class LLMAnalyzer:
             raise ValueError("OpenAI API key not found. Please set OPENAI_API_KEY environment variable.")
         
         self.llm = ChatOpenAI(
-            api_key=self.api_key,
+            openai_api_key=self.api_key,
             model_name="gpt-4",
             temperature=0.1,
             max_tokens=2000
