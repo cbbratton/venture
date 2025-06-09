@@ -1,1 +1,1 @@
-web: gunicorn exec-summary-analyzer:app
+web: gunicorn app:app
