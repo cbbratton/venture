@@ -7,4 +7,3 @@ openai==0.28.0
 langchain==0.0.310
 python-dotenv==1.0.0
 markdown==3.4.4
-gunicorn==21.2.0
